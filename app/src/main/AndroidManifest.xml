@@ -32,7 +32,8 @@
         <activity android:name=".Splashscreen" />
         <activity android:name=".EditProfile" />
         <activity android:name=".Scanner" />
-        <activity android:name=".StartJourney"></activity>
+        <activity android:name=".StartJourney" />
+        <activity android:name=".tryout"></activity>
     </application>
 
 </manifest>
