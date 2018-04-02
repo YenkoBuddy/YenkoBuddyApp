@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.example.wendy.yenko.Scanner">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="com.example.wendy.yenko.MainPage">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="119dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/logosmall" />
+    </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="4"
+       android:orientation="horizontal"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp">
+       <Button
+           android:id="@+id/buttonScanner"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom"
+           android:text="Scan QR Code"
+           android:background="@drawable/button_shape"
+           android:textColor="#0da530"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="30dp"
+           />
+
+   </LinearLayout>
+
+
+
+
+
+</LinearLayout>

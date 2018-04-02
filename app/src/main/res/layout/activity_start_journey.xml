@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.wendy.yenko.StartJourney"
+    android:weightSum="19">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="22">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logosmall"
+            android:layout_marginTop="3dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageFromUrl"
+                android:layout_width="110dp"
+                android:layout_height="107dp"/>
+            <TextView
+                android:id="@+id/labelSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Journey Problems:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:layout_weight="0.44" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/labelListView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Journey Problems:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:layout_weight="0.51" />
+            <ListView
+                android:id="@+id/listViewProblems"
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:visibility="invisible"
+                android:textSize="2sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/labelDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Driver:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/labelRegNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Number:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewRegNo"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/labelTaxiType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Taxi Type:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewType"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <TextView
+                android:id="@+id/labelDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taxi Description:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                />
+            <TextView
+                android:id="@+id/labelRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Rating:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text=""
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/labelViewReviews"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:text="View Reviews:"
+                android:textColor="@android:color/holo_blue_dark"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:minWidth="500dp"
+        android:minHeight="100dp">
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/buttonStartJourney"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Journey"
+            android:background="@drawable/button_shape"
+            android:textColor="#0da530" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
